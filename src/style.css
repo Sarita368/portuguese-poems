@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(192, 212, 219);
+    background-color: rgb(192, 216, 224);
     font-family: Arial, serif;
 }
 
@@ -30,7 +30,7 @@ h1 {
     background-color: white;
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.5);
+    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.4);
     padding: 15px 20px;
 }
 
