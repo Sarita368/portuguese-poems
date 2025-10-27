@@ -10,41 +10,42 @@
   </head>
   <body>
     <div class="container">
-    <header>
-      <h1>AI Portuguese Poem Generator</h1>
-    </header>
-    <main>
-      <form id="poem-generator-form">
-        <input
-          type="text"
-          placeholder="Enter the topic of the Portuguese Poem"
-          autofocus
-          required
-          autocomplete="off"
-          class="instructions"
-          id ="user-input"
-        />
-        <input type="submit" class="submit-button" />
-      </form>
-      <div class="poem">
-        Tudo vale a pena
-        <br />
-        quando a alma
-        <br />
-        não é pequena.
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/Sarita368" target="_blank"> Sarah S</a> and is
-      <a href="https://github.com/Sarita368/portuguese-poems" target="_blank">
-        open-sourced on GitHub
-      </a>
-      and is hosted on
-      <a href="https://aiportuguesepoemgenerator.netlify.app/" target="_blank"
-        >Netlify.</a
-      >
-    </footer></div>
+      <header>
+        <h1>AI Portuguese Poem Generator</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of a Portuguese poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-input"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e Life, Peace or a Flower</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/Sarita368" target="_blank"> Sarah S</a> and
+        is
+        <a href="https://github.com/Sarita368/portuguese-poems" target="_blank">
+          open-sourced on GitHub
+        </a>
+        and is hosted on
+        <a href="https://aiportuguesepoemgenerator.netlify.app/" target="_blank"
+          >Netlify.</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
+
+

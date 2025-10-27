@@ -20,10 +20,14 @@ function generatePoem(event) {
     "Generate a short poem of exactly four lines in Portuguese. Each line should contain only one sentence. " +
     "Do not include a title or extra text. " +
     "Format the poem in HTML so that each line ends with a <br> tag. " +
-    'At the bottom of the poem, add a new line that says "<br>— SheCodes AI". ' +
+    'At the bottom of the poem, add a new line that says "<br>— SheCodes AI"in strong. ' +
     "Return only the poem with the <br> tags.";
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+let poemElement = document.querySelector(".poem");
+poemElement.classList.remove("hidden");
+poemElement.innerHTML = `<div class="generating">⌛Generating a Portuguese poem about ${userInputElement.value}...</div>`;
 
   console.log("Generating poem...");
   console.log(`Prompt: ${prompt}`);

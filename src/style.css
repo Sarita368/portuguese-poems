@@ -1,11 +1,13 @@
 body {
-    background-color: rgb(173, 198, 206);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(192, 212, 219);
+    font-family: Arial, serif;
 }
+
 a {
-    color: cornflowerblue;
+    color: rgb(128, 157, 253);
     text-decoration: none;
 }
+
 .container {
     margin: 120px auto;
     max-width: 600px;
@@ -21,17 +23,26 @@ h1 {
     font-weight: 800;
     font-size: 36px;
     line-height: 1.5;
-    color: cornflowerblue;
+    color: rgb(128, 157, 253);
+}
+
+.form-container {
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.5);
+    padding: 15px 20px;
 }
 
 form {
-    padding: 30px;
-    background-color: white;
-    border-radius: 10px;
     display: flex;
-    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.1);
 }
-
+.hint {
+    line-height: 1.5;
+    font-size: 12px;
+    margin-top: 5px;
+    opacity: 0.6;
+}
 .instructions {
     padding: 16px;
     border: 1px solid rgba(39, 33, 66, 0.5);
@@ -68,9 +79,22 @@ form {
     color: #272044;
 
 }
+.hidden {
+    display: none;
+}
 footer {
     text-align: center;
     margin-top: 40px;
     font-size: 13px;
     color: #555;
+}
+
+.generating {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
